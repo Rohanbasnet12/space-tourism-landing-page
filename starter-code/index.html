@@ -9,29 +9,67 @@
   <!-- Linking custom CSS -->
   <link rel="stylesheet" href="../src/style.css">
   <link rel="stylesheet" href="../src/responsive.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <title>Rohan Basnet | Space tourism website</title>
 </head>
 
 <body>
-  <main id="main">
-    <div class="container"></div>
+  <main id="main" class="relative">
+    <div class="background-wrapper">
+      <div id="background-img-desktop" class="block">
+        <img src="./assets/home/background-home-desktop.jpg" alt="Desktop background image">
+      </div>
+      <div id="background-img-tablet" class="hidden">
+        <img src="./assets/home/background-home-desktop.jpg" alt="Desktop background image">
+      </div>
+      <div id="background-img-mobile" class="hidden">
+        <img src="./assets/home/background-home-desktop.jpg" alt="Desktop background image">
+      </div>
+    </div>
+    <div class="container-fluid absolute top-0 left-0 z-10">
+      <header id="navbar" class="z-50 flex items-center justify-between pt-10 pl-24">
+        <div class="nav-logo">
+          <a href="#">
+            <img src="./assets/shared/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="nav-line"></div>
+        <ul id="menu" class="flex items-center gap-12 py-8 px-32 text-white">
+          <li><a href="index.html" class="active">00 Home</a></li>
+          <li><a href="destination-moon.html" target="_blank">01 Destination</a></li>
+          <li><a href="crew-commander.html">02 Crew</a></li>
+          <li><a href="technology-vehicle.html">03 Technology</a></li>
+        </ul>
+      </header>
+      <div id="home-layout_wrapper" class="grid grid-cols-2 px-24 pt-32">
+        <div class="info-section text-white flex flex-col gap-4">
+          <h2 class="text-xl">So, you want to travel to</h2>
+          <h1 class="text-9xl font-mono">Space</h1>
+          <p class="text-gray-500">
+            Let’s face it; if you want to go to space, you might as well genuinely go to
+            outer space and not hover kind of on the edge of it. Well sit back, and relax
+            because we’ll give you a truly out of this world experience!
+          </p>
+        </div>
+        <div class="explore-section flex justify-end">
+          <p class="text-3xl font-thin font-serif">
+            <a href="#">
+              Explore
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to
-  outer space and not hover kind of on the edge of it. Well sit back, and relax
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-
+  <!-- Linking Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Linking custom JS file -->
+  <script src="../src/index.js"></script>
 </body>
 
 </html>
