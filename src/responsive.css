@@ -1,0 +1,82 @@
+/* Mobile version */
+@media (max-width: 378px) {
+    #main {
+        background: url('../starter-code/assets/home/background-home-mobile.jpg');
+    }
+}
+
+/* Tablet version */
+@media (max-width: 817px) {
+    #navbar {
+        padding: 0;
+    }
+
+    #main {
+        background: url('../starter-code/assets/home/background-home-tablet.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2rem;
+    }
+
+    #menu,
+    .nav-line {
+        display: none;
+    }
+
+    #ham-menu {
+        display: block;
+    }
+
+    #home-layout_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .info-section {
+        align-items: center;
+        padding: 3rem 0;
+        max-width: 500px;
+    }
+
+    .info-section>p {
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .explore-section {
+        padding: 2rem 0;
+    }
+
+    #menu li a::before {
+        bottom: 0%;
+    }
+
+    #menu li {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        transform: translateX(150%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        backdrop-filter: blur(20px);
+        width: 60%;
+        height: 100vh;
+        padding-top: 6rem;
+        transition: all .87s ease-out;
+    }
+
+    .side_bar {
+        transform: translateX(0);
+    }
+
+}

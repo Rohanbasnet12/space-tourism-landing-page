@@ -17,21 +17,45 @@
 <body>
   <main id="main">
     <div class="container-fluid">
-      <header id="navbar" class="z-50 flex items-center justify-between pt-10 pl-24">
+      <header id="navbar" class="z-40 flex items-center justify-between pt-10 pl-24">
+
         <div class="nav-logo">
           <a href="#">
             <img src="./assets/shared/logo.svg" alt="">
           </a>
         </div>
+
         <div class="nav-line"></div>
-        <ul id="menu" class="flex items-center gap-12 py-8 px-32 text-white">
+
+        <ul id="menu" class="flex items-center gap-12 text-gray-200">
           <li><a href="index.html" class="active">00 Home</a></li>
-          <li><a href="destination-moon.html" target="_blank">01 Destination</a></li>
+          <li><a href="destination-moon.html">01 Destination</a></li>
           <li><a href="crew-commander.html">02 Crew</a></li>
           <li><a href="technology-vehicle.html">03 Technology</a></li>
         </ul>
+
+        <div id="ham-menu" class="hidden z-50">
+          <div id="hamBtn" class="block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+              <g fill="#D0D6F9" fill-rule="evenodd">
+                <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+              </g>
+            </svg>
+          </div>
+          <div id="hamBtn-close" class="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+              <g fill="#D0D6F9" fill-rule="evenodd">
+                <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
       </header>
-      <div id="home-layout_wrapper" class="grid grid-cols-2 px-24 pt-32">
+
+      <!-- home section -->
+      <section id="home-layout_wrapper" class="grid grid-cols-2 px-24 pt-32">
         <div class="info-section text-white flex flex-col gap-4">
           <h2 class="text-xl">So, you want to travel to</h2>
           <h1 class="text-9xl font-mono">Space</h1>
@@ -48,7 +72,8 @@
             </a>
           </p>
         </div>
-      </div>
+      </section>
+
     </div>
   </main>
 
