@@ -3,6 +3,15 @@
     #main {
         background: url('../starter-code/assets/home/background-home-mobile.jpg');
     }
+
+    .info-section h1 {
+        font-size: 6.5rem;
+    }
+
+    .info-section>p {
+        text-align: center;
+        font-size: .8rem;
+    }
 }
 
 /* Tablet version */
@@ -76,7 +85,7 @@
     }
 
     .side_bar {
-        transform: translateX(0);
+        transform: translateX(0) !important;
     }
 
 }
